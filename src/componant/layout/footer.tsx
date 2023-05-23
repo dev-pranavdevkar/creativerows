@@ -14,6 +14,15 @@ export default function Footer() {
                     <img className='whatsapp' src="../images/WhatsApp_icon.png" alt="" />
                 </a>
             </div>
+
+            <div className="">
+                
+                <a href="tel:+918669225572" className="whtsfloat" target="_blank">
+
+
+                    <img className='call-icon' src="../images/call.png" alt="" />
+                </a>
+            </div>
         </footer>
     )
 }

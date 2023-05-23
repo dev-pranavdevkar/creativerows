@@ -15,7 +15,7 @@ export default function WhyTheCareer() {
       <div className='container px-lg-5'>
         <div className=' py-5 bg-light'>
           <div className='section-head text-center  justify-content-center d-block'>
-            <h3 className='section-title  '>Why The Career360.com?</h3>
+            <h3 className='section-title  '>Welcome To BVUCOEP !</h3>
 
             <div className="d-flex justify-content-center">
               <div className="blue-border-div ">
@@ -24,11 +24,10 @@ export default function WhyTheCareer() {
           </div>
 
           <div>
-            <ul className='mt-3'>
-              {why.map((whyus, index) => (
-                <li key={index}>{whyus.content}</li>
-              ))}
-            </ul>
+            <p className='mt-3'><b>Bharati Vidyapeeth (Deemed to be University) College of Engineering</b> was established by <b>Dr. Patangrao Kadam in 1983.</b> BVUCOEP is constituent unit of Bharati Vidyapeeth (Deemed to be University). Which has been Accredited to A+ grade in its third Cycle by &apos;NAAC&apos; in 2017 (BVDU accredited to Grade &apos;A&apos; in 2004 and 2011). The National Board of Accreditation (NBA) has accredited programmes of BVUCOEP in 2018, 2012 and 2005. BVUCOEP ranked among top 100 Engineering Institutes of India continuously for Six years by NIRF, MHRD, Govt. of India. Ranked 131st at National Level by NIRF 2022.
+              Vision of Bharati Vidyapeeth (Deemed to be University) is <b>&quot;To be world class University for Social Transformation Through Dynamic Education.&quot;</b>
+            </p>
+
           </div>
         </div>
       </div>

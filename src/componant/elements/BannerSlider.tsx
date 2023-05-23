@@ -17,6 +17,7 @@ export default function BannerSlider() {
   };
 
   const BannerImages = [
+    { image: '../images/bharti.png', data1: 'STUDY MBA/PGDM IN PUNE AND MUMBAI', data2: 'ADMISSION OPEN FOR 2022 INTAKE' },
     { image: '../images/slide2.png', data1: 'STUDY MBA/PGDM IN PUNE AND MUMBAI', data2: 'ADMISSION OPEN FOR 2022 INTAKE' },
     { image: '../images/slide1.png', data1: 'STUDY MBA/PGDM IN PUNE AND MUMBAI', data2: 'ADMISSION OPEN FOR 2022 INTAKE' },
     { image: '../images/slide3.png', data1: 'STUDY MBA/PGDM IN PUNE AND MUMBAI', data2: 'ADMISSION OPEN FOR 2022 INTAKE' }

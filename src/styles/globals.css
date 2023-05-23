@@ -97,7 +97,7 @@ hr {
 .topclg-card{
     padding: 35px 30px;
    border: none;
-    height: 420px !important;
+    height: 625px !important;
     margin-bottom: 17px;
     margin-top: 13px;
     box-shadow: 0 0 11px #939393;
@@ -410,6 +410,15 @@ position: static;
     right: 10px;
     height: 50px;
     width: 50px;
+    z-index: 999;
+}
+
+.call-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
     z-index: 999;
 }
   

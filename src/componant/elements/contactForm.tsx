@@ -45,6 +45,13 @@ export default function ContactForm() {
           <br />
           <input className="w-100 form-control" type="text" name="name" value={formData.name} onChange={handleChange} required />
         </div>
+        <div className='py-1'>
+          <label>
+            Phone:<span className='text-danger'>*</span>
+          </label>
+          <br />
+          <input className="w-100 form-control" type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
+        </div>
 
         <div className='py-1'>
           <label>
@@ -61,34 +68,22 @@ export default function ContactForm() {
           <br />
           <select className="w-100 form-control" name="course" value={formData.course} onChange={handleChange} required>
             <option value="" disabled>Select a course</option>
-            <option value="MBA">MBA</option>
-            <option value="PGDM">PGDM</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+            <option value="Electronics & Telecommunication">Electronics & Telecommunication</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Electrical and Computer Engineering">Electrical and Computer Engineering</option>
+            <option value="Chemical Engineering">Chemical Engineering</option>
+            <option value="Robotics and Automation">Robotics and Automation</option>
           </select>
         </div>
 
-        <div className='py-1'>
-          <label>
-            Phone:<span className='text-danger'>*</span>
-          </label>
-          <br />
-          <input className="w-100 form-control" type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
-        </div>
+     
 
-        <div className='py-1'>
-          <label>
-            City: <span className='text-danger'>*</span>
-          </label>
-          <br />
-          <input className="w-100 form-control" type="text" name="city" value={formData.city} onChange={handleChange} required />
-        </div>
 
-        <div className='py-1'>
-          <label>
-            Message: <span className='text-danger'>*</span>
-          </label>
-          <br />
-          <textarea aria-multiline rows={3} className='w-100 py-1 form-control' name="message" value={formData.message} onChange={handleChange} required />
-        </div>
 
         <button className='btn-submit mt-3' type="submit">Submit</button>
       </form>

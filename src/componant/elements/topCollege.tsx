@@ -3,22 +3,25 @@ import React from 'react';
 
 
 
-const mbaclg = [
-  { content: "SIBM Pune: Symbiosis institute of Business Management Exam: SNAP" },
-  { content: "PUMBA: Department of Management Science University of Pune Exam: CAT, CMAT, MAH CET" },
-  { content: "Sri Balaji University Pune Exam: CAT, XAT, MAT, CMAT, MAH CET, Own Entrance Exams" },
-  { content: "SINDIRA PUNE (MBA/PGDM): Indira Institute of Management. Exam: CAT, CMAT, MAH CET, XAT, MAT, CMAT, ATMA, GMAT" },
-  { content: "ISBM Pune (PGDM): International School Of Business and Media. Exam: CAT, XAT, MAT, CMAT, ATMA, GMAT" },
-  { content: "MIT - WPU Exam: CAT, CMAT, MAH CET, XAT, MAT, ATMA." }
+const academicPrograms = [
+  { course: "Computer Engineering", seats: '120' },
+  { course: "Computer Science and Engineering", seats: '120' },
+  { course: "Computer Science and Business Systems", seats: '60' },
+  { course: "Electronics & Telecommunication", seats: '120' },
+  { course: "Mechanical Engineering", seats: '60' },
+  { course: "Electronics and Communication Engineering", seats: '150' },
+  { course: "Information Technology", seats: '60' },
+  { course: "Civil Engineering", seats: '60' },
+  { course: "Electrical and Computer Engineering", seats: '60' },
+  { course: "Chemical Engineering", seats: '30' },
+  { course: "Robotics and Automation", seats: '60' },
+
 ];
 
-const pgdmclg = [
-  { content: "S.P JAIN INSTITUTE OF MANAGEMENT AND RESEARCH EXAM - CAT, GMAT" },
-  { content: "NMIMS (NARSEE MONJEE INSTITUTE OF MANAGEMENT STUDIES) Exam - NMAT" },
-  { content: "JBIMS MUMBAI: JAMNALAL BAJAJ INSTITUTE OF MANAGEMENT STUDIES Exam - CAT, CMAT, MAH CET" },
-  { content: "K J SOMAIYA INSTITUTE OF MANAGEMENT MUMBAI Exam - CAT, XAT, CMAT, NMAT, GMAT" },
-  { content: "WELINGKAR INSTITUTE OF MANAGEMENT DEVELOPMENT AND RESEARCH (PGDM) Exam - CAT, XAT, CMAT, ATMA, GMAT" },
-  { content: "ITM: ITM GROUP OF INSTITUTIONS(PGDM) Exam - CAT, XAT, MAT, CMAT, MAH CET, TANCET, GMAT" }
+const cet = [
+  { course: "B.Tech BV- BTECH 2023 (Online Examination)", lastApply: '01st June 2023', examDate: '11th June 2023' },
+  { course: "B.Tech (Direct Second Year) (Online Proctored Home Base Examination)", lastApply: '08th June 2023', examDate: '18th June 2023' },
+  { course: "M.Tech BV- MTECH 2023 (Online Proctored Home Base Examination)", lastApply: '15th June 2023', examDate: '25th June 2023' },
 ];
 
 export default function TopCollege() {
@@ -27,33 +30,73 @@ export default function TopCollege() {
       <div className='container p-lg-5'>
         <div className='row'>
           <div className='col-lg-6'>
-          <h3 className='section-title py-3'>Top MBA &amp; PGDM Colleges of PUNE</h3>
+            <h3 className='section-title py-3'>Academic Programmes</h3>
             <div className='h-100'>
-              <div className=" topclg-card">
+              <div className=" topclg-card ">
                 <div className="card-body">
-                <div className="blink-few-seats blinking-background">Few Seats are Left</div>
-                  <ul className='mt-3'>
-                    {mbaclg.map((college, index) => (
-                      <li key={index}>{college.content}</li>
-                    ))}
-                  </ul>
-                 
+                  <div className="blink-few-seats blinking-background">Few Seats are Left</div>
+                  <div className='mt-3'>
+                  
+                    <table className="table table-bordered">
+                      <thead>
+
+                        <tr >
+                          <th scope="col">Name of the Programme</th>
+                          <th scope="col">B.Tech Intake (1st Year)</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {academicPrograms.map((intake, index) => (
+                          <tr key={index}>
+
+                            <td>{intake.course}</td>
+                            <td>{intake.seats}</td>
+                          </tr>
+                        ))}
+
+
+                      </tbody>
+                    </table>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
           <div className='col-lg-6'>
-          <h3 className='section-title py-3'>Top MBA &amp; PGDM Colleges of Mumbai</h3>
+            <h3 className='section-title py-3'>B.Tech/M.Tech CET Schedule 2023-24</h3>
             <div className='h-100'>
               <div className="topclg-card ">
                 <div className="card-body">
-                <div className="blink-few-seats blinking-background">Few Seats are Left</div>
-                  <ul className='mt-3'>
-                    {pgdmclg.map((college, index) => (
-                       <li key={index}><i className="fa fa-square" aria-hidden="true"></i>{college.content}</li>
-                    ))}
-                  </ul>
-                 
+                  <div className="blink-few-seats blinking-background">Few Day&apos;s are Left</div>
+                  <div className='mt-3'>
+                  
+                  <table className="table table-bordered">
+                    <thead>
+
+                      <tr >
+                        <th scope="col">Name of the Programme</th>
+                        <th scope="col">Last Date to Apply</th>
+                        <th scope="col">Date of Online Examination</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {cet.map((cet, index) => (
+                        <tr key={index}>
+
+                          <td>{cet.course}</td>
+                          <td>{cet.lastApply}</td>
+                          <td>{cet.examDate}</td>
+                        </tr>
+                      ))}
+
+
+                    </tbody>
+                  </table>
+                </div>
+
                 </div>
               </div>
             </div>
