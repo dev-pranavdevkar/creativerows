@@ -8,7 +8,7 @@ export default function Footer() {
             </div>
 
             <div className="">
-                <a href="https://api.whatsapp.com/send/?phone=918669225572&amp;text=Hello ! I'm interested&amp;app_absent=1" class="whtsfloat" target="_blank">
+                <a href="https://api.whatsapp.com/send/?phone=918669225572&amp;text=Hello ! I'm interested&amp;app_absent=1" className="whtsfloat" target="_blank">
 
 
                     <img className='whatsapp' src="../images/WhatsApp_icon.png" alt="" />
