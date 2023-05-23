@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer>
             <div className='bg-dark py-1 text-center '>
-                <p className='text-white  text-center'>@2022 The Career360.com - Designed by Creative Crows Technologies.</p>
+                <p className='text-white  text-center'>@2023 Bharati Vidyapeeth  - Designed by Creative Crows Technologies.</p>
             </div>
 
             <div className="">

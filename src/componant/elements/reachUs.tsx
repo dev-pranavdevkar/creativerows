@@ -13,9 +13,9 @@ export default function ReachUs() {
             </div>
           </div>
           <div>
-            <p className='paratext'>The CAREER360.COM<br /></p>
+            <p className='paratext'>BHARTI VIDYAPEETH <br /></p>
             <span>+91-866-922-5572 | +91-878-841-6701</span><br />
-            <p className='paratext'>Website: http://thecareer360.com/ </p>
+            <p className='paratext'>Website: https://creativerows-go3fhur8p-pranavdevkar1311-gmailcom.vercel.app/ </p>
           </div>
         </div>
       </div>
